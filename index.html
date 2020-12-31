@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Shruthis's Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+<!--Styling-->
+
+<style>
+
+
+  body,h1,h2,h3,h4,h5,p {font-family: "Raleway", sans-serif; font-size:18px}
+  
+  .w3-third img{margin-bottom: -6px; opacity: 0.9; cursor: pointer}
+  .w3-third img:hover{opacity: 1}
+  
+  .grid h3,b{
+    justify-content: center;
+  }
+  
+  .bg{
+    background-repeat: repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   background-position: top;
+   background-image:url(https://cdn.hipwallpaper.com/i/25/20/C3ieHs.jpg);
+   width: 100%;
+   height: 100%;
+   letter-spacing: 0.02em;
+    font-weight: 400;
+   -webkit-font-smoothing: antialiased;
+  }
+  
+  .certi{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+  }
+  
+  .item{
+      position: relative;
+  }
+  
+  .item1 img:hover{opacity: 1}
+  
+  .w3-image1{
+    width: 380px;
+      height: 430px;
+      border-radius: 45%;
+      text-align: center;
+  }
+  w3-opacity-min1{opacity:1;
+    color: red;
+  }
+  .line-dec{
+  width: 900px;
+      height: 2px;
+      background-color:black;
+      margin: 10px auto;}
+      .line-dec11{
+  width: 300px;
+      height: 2px;
+      background-color:black;
+      margin: 10px auto;}
+  
+  
+  
+  /* Left & Right Post */
+  
+  .right-image-post {
+      margin-top: 60px;
+      padding-top: 60px;
+      border-top: 2px solid rgba(250, 250, 250, 0.1);
+  }
+  
+  .left-image img,
+  .right-image img {
+      border-radius: 5px;
+      padding-left:20px
+  }
+  
+  .right-image-post h4,
+  .left-image-post h4 {
+      margin-top: 30px;
+  }
+  
+  .right-image-post p,
+  .left-image-post p {
+      margin-top: 20px;
+  }
+  
+  .right-image-post .white-button,
+  .left-image-post .white-button {
+      margin-top: 30px;
+  }
+  .left-image1{
+    float:left;
+    margin-left:10px;
+    margin-right: 10px;
+    border-radius: 20%;
+  }
+  .right-image1{
+    float:right;
+    margin-right:10px;
+    margin-left:10px;
+    border-radius:20%
+  }
+  .left-image1 h4{
+    text-align: center;
+    margin-right:10px;
+    margin-left:10px;
+  }
+  .right-image1 h4{
+    text-align: center;
+    margin-left:10px;
+    margin-right:10px;
+  }
+  .left-image1 p{
+    margin-right:10px;
+    margin-left:10px;
+  }
+  .right-image1 p{
+    margin-left:10px;
+    margin-right:10px;
+  }
+  
+  .grid{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 50px;
+      font-family: sans-serif;
+  
+  }
+  .grid img{
+      border: 2px solid black;
+      border-radius: 50px;
+      margin-left:20px
+  }
+  .origami {
+  
+      border-radius: 30px;
+      background-color:#fefef2;
+      color:black;
+      padding: 40px;
+      margin: 50px;
+      width:500px
+  
+  }
+  .origami:hover{
+  
+      transform: scale(1.1);
+  }
+  .w3-scolor{
+    background-color:#FCF6F5FF;
+  }
+  div.transbox {
+  margin: 20px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  width:500px;
+  height:400px
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+/* Services */
+
+.my-services .col-md-6 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.service-item {
+    margin-bottom: 10px;
+    padding: 50px;
+    background-color: rgba(250, 250, 250, 0.1);
+    transition: all 0.5s;
+}
+
+.service-item h4 {
+    transition: all 0.5s;
+}
+
+.service-item p {
+    transition: all 0.5s;
+}
+
+.service-item:hover {
+    background-color: rgba(250, 250, 250, 1);
+}
+
+.service-item:hover h4 {
+    color: #1e1e1e;
+}
+
+.service-item:hover p {
+    color: #4a4a4a;
+}
+
+.service-item .service-icon {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+}
+
+.service-item .first-service-icon {
+    background-image: url(../images/first-white-icon.png);
+}
+
+.service-item:hover .first-service-icon {
+    background-image: url(../images/first-main-icon.png);
+}
+
+.service-item .second-service-icon {
+    background-image: url(../images/second-white-icon.png);
+}
+
+.service-item:hover .second-service-icon {
+    background-image: url(../images/second-main-icon.png);
+}
+
+.service-item .third-service-icon {
+    background-image: url(../images/third-white-icon.png);
+}
+
+.service-item:hover .third-service-icon {
+    background-image: url(../images/third-main-icon.png);
+}
+
+.service-item .fourth-service-icon {
+    background-image: url(../images/fourth-white-icon.png);
+}
+
+.service-item:hover .fourth-service-icon {
+    background-image: url(../images/fourth-main-icon.png);
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-md-6{
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+
+
+}
+
+.section{
+  display:block
+}
+
+.container {
+    margin: 0 auto;
+}
+
+</style>
+
+  <!--Main Body-->
+<body class="bg w3-content" style="max-width:1600px">
+
+      <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-scolor  w3-bar-block w3-text-black w3-animate-left  w3-collapse w3-top w3-center" style="z-index:3;width:300px;
+	              font-weight:bold;" id= "mySidebar"><br>
+  	  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+	    <div class =" w3-padding-16 " width="55%">
+    	  <h1 class="w3-center w3-bar-item"><b>SHRUTHI N S</b></h1>
+	    </div>
+
+		    <hr class="line-dec11">
+  	  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a>
+  		  <hr class="line-dec11">
+  
+  	  <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button">PROJECTS</a>
+  	  	<hr class="line-dec11">
+  	  <a href="#certifications" onclick="w3_close()" class="w3-bar-item w3-button">CERTIFICATIONS</a>
+  	  	<hr class="line-dec11">
+  	  	<hr class="w3-opacity-min1">
+
+  	  <div class="w3-margin-bottom w3-center">
+        <a href = "https://www.linkedin.com/in/shruthi96/" target="_blank" ><img src = "linkedin.png" width = 50 height = 50/></a> &nbsp;
+        <a href = "https://github.com/shruthi2196" target="_blank" ><img src = "github.png" width = 50 height = 50/></a> &nbsp;
+        <a href = "https://www.facebook.com/shruthi.shrihari/" target="_blank" ><img src = "facebook.png" width = 50 height = 50/></a>
+      </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+    <span class="w3-left w3-padding"><b>SHRUTHI N S</b></span>
+    <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+  </header>
+  
+  
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+        title="close side menu" id="myOverlay">
+  </div>
+  
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:300px">
+    <!-- Push down content on small screens -->
+    <div class="w3-hide-large" style="margin-top:83px"></div>
+
+      <!-- About section -->
+      <div class="w3-container   w3-center w3-text-black w3-padding-small" id="about">
+
+        <div class="line-dec"></div>
+        <h1><b>ABOUT ME</b></h1>
+        <div class="line-dec"></div>
+
+        <div class =" w3-padding-small ">
+          <img src="97269.jpg" class = "w3-image1">
+          <h4 class="w3-center w3-padding-small"><i>"The nature of this portfolio is that it's always a WORK IN
+          PROGRESS........."</i></h4>
+          <div class="w3-content w3-justify " style="max-width:1200px">
+
+            <p>I'm shruthi, a multidisciplinary creative proffesional from Bengaluru,
+            Currently working as a Teacher Mentor and Kids coding expert at Whitehat Jr, I am a mentor
+            who trains and supports the new teachers in the platform and also i teach programming to
+            various kids across the globe on creating games and applications.
+            An adaptable Professional with overall three plus years experience in case management,
+            customer handling,upselling,end user support,teaching and mentoring.
+            </p>
+            <p>
+            I enjoy a good cup of coffee or a chocolate tea and also like to spend most of my time watching
+            DIY's on pinterest and trying it out. I'm a bharathanatayam dancer who loves to explore new
+            classical dance forms and participate in dance events.
+            Love taking intiatives and co-ordinating events, I've always been fascinated by event management works and
+            creative ideas right from decors to UI desgins.
+
+            </p>
+
+            <div class="line-dec"></div>
+
+            <div class="w3-center ">
+              <h1><b>WHAT I'M GOOD AT</b></h1>
+            </div>
+    
+            <div class="line-dec"></div>
+            <br>
+
+            <h2><b>Case Management | Techincal Support | Upselling</b></h2>
+            <p> One plus years of experience in handling the global customers in case creation,
+            resolving their technical queries with customer satisfaction as a major metric.
+            Proven experience at DELL Technologies as a DELL certified technician for hardware and software support
+            on its laptops, desktops and printers.Experience in upselling the dell products, convinicing and converting
+            the customers to potential leads who can enroll for the course at Whitehat jr to achieve the best converstion rate.
+            <br><b>Tools/Languages: SFDC</b>      </p>
+
+            
+       
+            <br>
+            <h2><b>Teaching | Mentoring</b></h2>
+            <p>
+              Hosting and co-ordinating events during my under graduation helped me to lose stage fear and communicate
+              with confidence. Have more than one plus years of experience in teaching computer science and programming
+              to engineering students, 7-10 grade kids across the globe. Trained new teachers who joined the organisation
+              on how to improve their trial converstions and paid curriculum queries.
+              a track record of completeing 1500 plus classes and mentoring 10 plus new teachers at whitehat jr.
+            </p>
+        
+            <!---->
+
+            <br>
+            <h2><b>Reports | Follow ups | Presentations</b></h2>
+            <p>
+              I'm more of a data and desgin loving person who loves creating and exploring new desgins to create informative
+              and noticable reports, dashboards and presentations. Proven experience in carrying out every task at its best
+              with proper follow ups and reports. Played primary role to create presantations and summary in data science
+              group case studies to represent the analysis that was carried out in the project.<br>
+              <b>Tools/Languages: MS Office, Tableau</b>
+            </p>
+          
+            <!---->
+
+            <br>
+        
+          
+           
+            <h2><b>Development | Analysis</b></h2>
+            <h5><i>"Formal education will make you a living; self-education will make you fortune"</i></h5>
+            <p>
+            Started to learn developing games, applications in order to earn my bread & butter which turned
+            out to create interest in the field of development and coding. Created some games and applications
+            using JavaScript and React native. Worked on some data science projects as a part of my curriculum
+            during my post graduation which helped me to enhance my skills in python programming for data analysis and numpys.
+            Created this portfolio by self learning which helped to enhance my skills in html,css and bootstrap.<br>
+            <b>Tools/Languages: JavaScript, Python for analysis, HTML, CSS, Bootstrap, React Native</b>
+            </p>
+        
+            <br>
+            <section class="section my-services" data-section="section2">
+              <div class="container">
+                
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="service-item">
+                      <div class="first-service-icon service-icon"></div>
+                      <h4>Customer Handling and End-User Support</h4>
+                      <p> One plus years of experience in handling the global customers in case creation,
+                        resolving their technical queries with customer satisfaction as a major metric.
+                        Proven experience at DELL Technologies as a DELL certified technician for hardware and software support
+                        on its laptops, desktops and printers.Experience in upselling the dell products, convinicing and converting
+                        the customers to potential leads who can enroll for the course at Whitehat jr to achieve the best converstion rate.
+                        <br><b>Tools/Languages: SFDC</b>      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="service-item">
+                      <div class="second-service-icon service-icon"></div>
+                      <h4>Upselling and Case Management</h4>
+                      <p>
+                        Proin lacus massa, eleifend sed fermentum in, dignissim vel
+                        metus. Nunc accumsan leo nec felis porttitor, ultricies
+                        faucibus purus mollis.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="service-item">
+                      <div class="third-service-icon service-icon"></div>
+                      <h4>Reports | Follow Ups | Presentations</h4>
+                      <p>
+                        Integer suscipit condimentum aliquet. Nam quis risus metus.
+                        Nullam faucibus quam eget arcu pretium tincidunt. Nam libero
+                        dui.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="service-item">
+                      <div class="fourth-service-icon service-icon"></div>
+                      <h4>Teaching | Mentoring</h4>
+                      <p>
+                        Vivamus et dui a massa venenatis fringilla. Proin lacus massa,
+                        eleifend sed fermentum in, dignissim vel metus. Nunc accumsan
+                        leo nec felis porttitor.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+           
+              
+
+              
+              
+          
+
+             
+
+
+           
+
+
+            <p><b>Email:</b> shruthi.ns0221@gmail.com</p>
+            <p><b>Contact No:</b> 7829533086</p>
+            <p><b>Linkedin:</b> https://www.linkedin.com/in/shruthi96/</p>
+            <p><b>Github:</b> https://github.com/shruthi2196</p>
+
+            <a href="shru_resume.pdf" download>
+            <p><button class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom"> Download Resume</button></p>
+            </a><br>
+          </div>
+        </div>
+      </div>
+     
+
+       
+  
+        
+          
+        
+          <!---->
+        
+
+      <!--My Projects-->
+
+      <div class=" w3-container w3-text-black  w3-center" id ="portfolio">
+        <br>
+        <div class="line-dec"></div>
+          <h1><b>MY PROJECTS</b></h1>
+        <div class="line-dec"></div>
+        <a href="#datascience" onclick="w3_close()" class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom"><b>DATA SCIENCE</b></a>
+        <a href="#games" onclick="w3_close()" class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom"><b>DEVELOPMENT</b></a>
+      </div>
+
+      <!--Data Science-->
+      <div class ="grid w3-center abc" >
+
+        <h1><b>DATA SCIENCE</b></h1>
+        <p><b>These were some of the projects that was created during my post garduation diploma in data science using
+              python programming for analysis including the capstone project which uses various libraries like numpys, pandas, matplotlib, seaborn and
+              some data science models like linear, logistic regression, advanced regression models etc....
+        </b></p>
+
+        <div class ="origami">
+          <center>
+            <a href = "https://cdn.hipwallpaper.com/i/1/7/UKoSfI.gif" target="_blank" ><img src = "dsp1.png"  width = 300px height = 300px /></a>
+            <h3><b>Capstone Project:</b> Credit Card Fraud Detection</h3>
+          </center>
+            <p>
+            <b>Goal:</b>To predict credit card transactions with the help of machine learning model.
+            <br><b>Source:</b> Data taken from kaggle
+            <br><b>Models Built:</b> Logistic Regression, Random Forest, XG Boost,Balancing/Oversampling, SMOTE and ADASYN.
+            <br><b>Metric: </b> Recall
+            </p>
+        </div>
+        <div class="origami">
+          <center>
+            <a href = "" target="_blank" ><img src = "dsp2.jpg"  width = 300px height = 300px /></a>
+            <h3> GDP Analysis</h3>
+          </center>
+            <p>
+            <b>Goal:</b>To help the CMs focus on areas that will foster economic development for their respective states.
+            <br><b>Source:</b> Data taken from https://data.gov.in/
+            <br><b>Key Learning:</b> Data Visualisation using seaborn and matplotlib.
+            <br><b>Metric: </b> GDP
+            </p>
+        </div>
+        <div class="origami">
+          <center>
+            <a href = "" target="_blank" ><img src = "dsp3.jpeg"  width = 300px height = 300px /></a>
+            <h3> A case study on credit EDA </h3>
+          </center>
+            <p>
+            <b>Goal:</b>To identify patterns which indicate if a client has difficulty paying their instalments which may be used for taking actions such as denying the loan,
+            reducing the amount of loan, lending (to risky applicants) at high interest.
+            <br><b>Source:</b> Data provided by university
+            <br><b>Key Learning:Exploratory analysis of data</b>
+            <br><b>Metric: </b> Target
+            </p>
+        </div>
+        <div class="origami">
+          <center>
+            <a href = "" target="_blank" ><img src = "dsp4.jpeg"  width = 300px height = 300px /></a>
+            <h3> Prediction of car pricing </h3>
+          </center>
+            <p>
+            <b>Goal:</b>To model the price of cars with the available independent variables for management to
+             understand the pricing dynamics of a new market.
+            <br><b>Source:</b> Data provided by university
+            <br><b>Model Built:</b> Linear Regression
+            <br><b>Metric: </b> R Square score
+            </p>
+        </div>
+        <div class="origami">
+          <center>
+            <a href = "" target="_blank" ><img src = "dsp5.png"  width = 300px height = 300px /></a>
+              <h3> Case study on Lead Scoring</h3>
+          </center>
+            <p>
+            <b>Goal:</b>To build a logistic regression model to assign a lead score between 0 and 100 to each of the leads which
+             can be used by the company to target potential leads.
+            <br><b>Source:</b> Data provided by university
+            <br><b>Model Built:</b> Logistic Regression with 92% accuracy.
+            <br><b>Metric: </b> Total Number of visits
+            </p>
+        </div>
+        <div class="origami">
+          <center>
+            <a href = "" target="_blank" ><img src = "dsp6.jpg"  width = 300px height = 300px /></a>
+            <h3> Case Study on telecom churn </h3>
+          </center>
+            <p>
+            <b>Goal:</b>To analyse customer-level data of a leading telecom firm, build predictive models to identify customers at high
+             risk of churn and identify the main indicators of churn.
+            <br><b>Source:</b> Data provided by university
+            <br><b>Models Built:</b> Logistic Regressions and Tree Models
+            <br><b>Metric: </b>Evaluation
+            </p>
+        </div>
+      </div>
+      <div class="line-dec"></div>
+
+      <!--Development-->
+
+
+      <div class = "grid w3-center" id="games">
+        <h2><b>DEVELOPMENT</b></h2>
+        <p><b> Have created 100+ projects in collabration with my students. These are some of the projects that were created
+              using javascript and react native. It uses libraries like p5.js, dom.min.js, p5.play.js, matter.js... </b></p>
+
+        <div class="origami">
+          <center>
+          <a href = "https://shruthi2196.github.io/Galaxy-Runner/" target="_blank" ><br><img src = "g1.PNG" width = 200px height = 200px/></a>
+          <h3> Galaxy-Runner </h3>
+          </center>
+          <p>
+            A simple infinite runner game that works on all the touch screen devices, desktops and monitors,
+            It uses js libraries like p5.js,p5.play.js.
+          </p>
+        </div>
+        <div class="origami">
+          <center>
+          <a href = "https://shruthi2196.github.io/The-Bow-and-Arrow/" target="_blank" ><br><img src = "g2.PNG" width = 200px height = 200px/></a>
+          <h3> Bow & Arrow </h3>
+          </center>
+          <p>
+          <ul>
+            A game that can be played on desktops and laptops which is controlled using keyboard and mouse events,
+            It uses P5 libraries.
+          </ul>
+          </p>
+        </div>
+      </div>
+      
+      <!--Certifications-->
+
+      <div class="w3-container  w3-center w3-text-black w3-margin-top w3-padding-16" id="certifications">
+        <div class="w3-content  w3-border-dark-grey" style="max-width:1600px">
+
+          <div class="line-dec"></div>
+            <h1><b>CERTIFICATIONS</b></h1>
+          <div class="line-dec"></div>
+
+          <br>
+
+          <div class="w3-row">
+            <div class = "item" class = "item1">
+              <a href="https://www.credential.net/352a50d4-8524-4b2f-a1cc-8907ff8b3b66#gs.my5qoc" target="_blank" ><img src = "dip.PNG" width = 550 height = 450  style= "opacity:0.9; border-radius:5%" style = "cursor: pointer"  ></a>
+            </div>
+            <div class="w3-third">
+              &nbsp;
+              <img src="game.PNG" style = "width : 100%; border-radius:5%" onclick="onClick(this)">
+            </div>
+            <div class = "w3-third">
+              &nbsp;
+              <img src="app.PNG" style = "width:100%; border-radius:5%" onclick="onClick(this)" >
+            </div>
+            <div class = "w3-third">
+              &nbsp;
+              <img src="ios.PNG" style = "width:100%; border-radius:5%"onclick="onClick(this)">
+            </div>
+            <br>
+     
+            <div class = "w3-third">
+              &nbsp;
+              <img src="training.PNG" style = "width:100%; border-radius:5% " onclick="onClick(this)">
+            </div>
+            <div class = "w3-third">
+              &nbsp;
+              <img src="t1.PNG" style = "width:100%; border-radius:5%" onclick="onClick(this)">
+            </div>
+            <div class="w3-third">
+              &nbsp;
+              <img src="cert_hac.PNG" style = "width:100%; border-radius:5%"  onclick="onClick(this)">
+            </div>
+            <br>
+     
+          </div>
+        </div>
+        <br>
+          <!--Thank You-->
+        <div class="line-dec"></div>
+          <h1><b>THANK YOU</b></h1>
+          <div class="line-dec"></div>
+        </div>
+
+    </div>
+  </div>
+  
+  <!--Functions-->
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+    
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+    
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+    
+    </script>
+
+</body>
+</html>
